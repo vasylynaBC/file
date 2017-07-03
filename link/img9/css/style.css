@@ -1,0 +1,178 @@
+body{
+    background-color:azure;
+}
+
+.menu__one{
+    width: 100%;
+    height: 50px;
+   padding: 5% 0;
+    background:linear-gradient(to bottom, gray 0%, cyan 36%, #07a68e 57%, gray 100%);
+    display: flex;
+    align-content: center;
+    border-radius: 10px;
+    margin: 0;
+    padding-left: 5px;
+    justify-content: center;
+}
+.main{height: 600px;
+    width: auto;
+    margin: 0;
+   
+    
+}
+.main__text{position: absolute;
+    top: 200px;
+    margin:25px;
+               height: auto;
+              color: black;
+                       }
+.main__edit{
+    
+    visibility: hidden;
+    top: 10px;
+    width: 100%;
+    margin:25px;
+    height: auto;
+    color: black;
+                       }
+               
+ INPUT[type="button"]{
+             box-shadow: inset 5px 5px 10px #000000,  inset -5px -5px 10px white;
+            display: block;
+            background-color:darksalmon;
+            margin-left: 5px;
+           border-top-left-radius: 5px;
+           border-bottom-right-radius:  5px;
+            width: auto;
+            height:25px;
+     color: aliceblue;
+        }
+#size, #font{
+     box-shadow: inset 5px 5px 10px white,  inset -5px -5px 10px black;
+            
+            background-color:burlywood;
+            margin-left: 10px;
+           
+            width: auto;
+            height:20px;
+    
+}
+
+ #colorTb{
+ z-index: 3;
+     visibility: hidden;
+    width: 100px;
+    height: 100px;
+      background-color: aliceblue;
+     border: 2px solid gray;
+     position: absolute;
+     top: 30%;
+     left: 50%;
+     
+}
+.colorBg{
+  width:  100px;
+  height:  100px;
+}
+.colorBg2{
+    width: 150px;;
+    height: 150px;
+}
+ #tableBox{
+    visibility: hidden;
+     position: absolute;
+     top: 30%;
+     left: 55%;
+     z-index: 3;
+    width: 100px;
+    height: 120px;
+    background-color: aliceblue;
+    border: 2px solid gray;
+    }
+ #tableBox2{
+    visibility: hidden;
+     position: absolute;
+     top: 30%;
+     left: 55%;
+     z-index: 3;
+    width: 150px;
+    height: 200px;
+    background-color: aliceblue;
+    border: 2px solid gray;
+    }
+#bg{font-size: 8px;
+    height: 20px;
+    width: 35px;
+}
+
+.menu__two{
+    position: absolute;
+    visibility: hidden;
+    top:0;
+     width:100%;
+    height: 50px;
+   padding: 5% 0;
+    background:linear-gradient(to bottom, gray 0%, cyan 36%, #07a68e 57%, gray 100%);
+    display: flex;
+    align-content: center;
+    border-radius: 10px;
+    margin: 0;
+    padding-left: 5px;
+    justify-content: center;
+}
+
+.userText{position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 150px;
+left: 0px;}
+
+.tableCr{position: absolute;
+    visibility: hidden;
+    z-index: 3;
+    top: 40%;
+    left: 30%;
+        width: 400px;
+    height: 190px;
+    background-color: beige;
+    border: 2px solid black;
+}
+.listCr{position: absolute;
+    z-index: 3;
+    visibility: hidden;
+
+    display: block;
+    top: 40%;
+    left: 30%;
+        width: 200px;
+    height: 150px;
+    background-color: beige;
+    border: 2px solid black;
+}
+#row, #width, #widhtBorder, #border{
+    position: absolute;
+    left: 120px;
+}
+span{
+    position: absolute;
+    left: 190px;
+}
+#colm, #height, .colorT, .typeB{
+    position: absolute;
+    top: 0px;
+    left: 110px;
+}
+.butt{display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    
+}
+textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    outline: none;
+}
+#myfile{
+    font-size: 8px;
+}

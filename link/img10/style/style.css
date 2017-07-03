@@ -1,0 +1,307 @@
+
+body{width: auto;
+display: block;
+   float: left; 
+    background:linear-gradient(to bottom, #804153 0%, #07a68e 36%, #07a68e 57%, #804153 100%);
+
+            position: relative;
+        }
+        .body{position: relative;
+            visibility: visible;
+            display: flex;
+justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+
+ .main{
+               background: linear-gradient(to bottom, #cc9ab8 10%, #6f0543 50%, #6f0543 57%, #9b045d 100%);
+                animation: bounceInRight 2s;
+                width: 80%;
+                height: 300px;
+               overflow: auto;
+                  border: 2px solid black;     
+                  border-radius: 20px;
+           }
+/*стиль для тексту в блоці маін*/
+ .text{margin:25px;
+               height: auto;
+              color: black;
+              
+                 text-align: justify;
+           }
+                 
+/*задає стиль для блоку butt*/
+
+           .butt{
+                 animation: bounceInUp 5s;
+                 margin-top: 10px;
+               display: flex;
+               flex-wrap: nowrap;
+               padding-top: 50px;
+               justify-content:space-around;
+                  height: 100px;
+               width: 80%;
+                  border: 2px solid black;                     background: linear-gradient(to bottom, #cc9ab8 10%, #6f0543 50%, #6f0543 57%, #9b045d 100%);
+                  border-radius: 30px;
+           }
+        
+
+/*задає стиль для блоку code*/
+
+            .code{margin-top: 10px;
+               
+                                  display: block;
+               animation: fadeInDown  2s;
+                   top: 10px;
+                  width: 80%;
+                  height: auto;
+                  border: 2px solid black;
+                  background: linear-gradient(to top, #cc9ab8 10%, #6f0543 50%, #6f0543 57%, #9b045d 100%);
+                  border-radius: 3px;
+           }
+/*задає стиль для блоку стилів*/
+
+        .styleBody{
+            position: absolute;
+                  display: flex;
+                
+                   top: 33%;
+            left: 10%;
+            right: 10%;
+                  width: 80%;
+                  height: 500px;;
+                  border: 2px solid black;               background: linear-gradient(to bottom, #cc9ab8 10%, #6f0543 50%, #6f0543 57%, #9b045d 100%);
+                  border-radius: 10px;;
+            visibility: hidden;
+            
+        }
+
+           .code__display{margin: 0 50px;
+                    
+                  visibility:hidden;
+           }
+           .userText{
+                  overflow: scroll;
+           }
+        textarea{
+            width: auto;
+        }
+/*задає стиль для блоку створення таблиці*/
+
+        .create{position:relative;
+           display: flex;
+/*           animation: fadeInDownBig 10s;*/
+            visibility: hidden;
+            top:-715px;
+            width:70%;
+            height: 30%;
+            left: 20%;
+            right: 20%;
+            border: 2px solid gray;
+            border-bottom-left-radius:  10px;
+            border-top-right-radius:  10px;
+            box-shadow: inset 5px 5px 10px #000000,  inset -5px -5px 10px #d2023d;
+
+        background: linear-gradient(to bottom, #cc9ab8 10%, #6f0543 50%, #6f0543 57%, #9b045d 100%);
+          
+        }
+
+        .create__style{
+            display:block;
+            margin-left: 40%;
+            margin-top: 5%;
+
+        }
+        .create__table{
+            font-size: 14pt;
+            font-family: serif;
+            visibility: arial;
+            animation: hinge 5s;
+        }
+        .choose__style{
+            font-size: 14pt;
+            font-family: serif;
+            visibility: arial;
+        }
+        .create__list{
+            font-size: 14pt;
+            position: relative;
+            top: -250px;
+                        font-family: arial;
+            visibility: hidden;
+            animation: hinge 5s;
+        }
+.create__list-style{
+    font-size: 14pt;
+    top: -100px;
+    
+            position: relative;
+       font-family: arial;
+            
+           
+}
+
+/*input для типу текст*/
+
+        INPUT[type="text"] {
+    background:transparent;
+            
+            border-top:0 ;
+            border-right:0 ;
+            border-left:0 ;
+            color: black;
+   }
+/*input для типу кнопок*/
+ INPUT[type="button"]{
+             box-shadow: inset 5px 5px 10px #000000,  inset -5px -5px 10px #d2023d;
+            display: block;
+            background-color: darkturquoise;
+            margin-left: 5px;
+           border-top-left-radius: 15px;
+           border-bottom-right-radius:  15px;
+            width: 100px;
+            height: 50px;
+        }
+
+
+/*стиль для вибору обєкту додавання*/
+        .choose{
+            color: darkslategrey;
+            font-weight: bold;
+            font-size:32pt;
+            font-family: Monotype Corsiva;
+        }
+       
+
+        .edit, .style, .block, #colorbg, #colortext{
+              float: left;
+        }
+       
+            
+/*стил для таблиці яку створюємо      */
+.styleTable{
+            margin-top: 5px;
+            font-size: 18pt;
+            font-family:sans-serif;
+        }
+        
+
+/*     табл кольорів*/
+        .colorBg{
+                     width: 200px;
+            margin-left:  200px;
+                     height: 150px;
+                     visibility: hidden;
+              }
+.code__butt{
+    display: flex;
+    
+}
+
+.styleBody__text{
+    bottom: 10px;
+    font-family:serif;
+}
+.styleBodytext{
+    margin-top: -100px;
+    position: absolute;    
+    font-family:serif;
+}
+.styleBodytext{
+    top: -50px;
+    
+    font-family:serif;
+}
+
+.text-countList{
+    visibility: hidden;
+position: absolute;
+    top:-20px;
+    font-family:serif;
+}
+
+.text-mark{position: absolute;
+    font-family:serif;
+    top: 50px;
+    visibility: hidden;}
+
+.text-number{position: absolute;
+    font-family:serif;
+    top: 50px;
+    visibility:hidden;}
+
+ #color{display: block;
+        background-color: darkcyan;
+        width: 80px;
+          height: 30px;
+        border-radius: 10px;} 
+    #type{display: block;
+        background-color: darkcyan;
+        width: 80px;
+          height: 30px;
+        border-radius: 10px;}
+    #mark{display: block;
+        background-color: darkcyan;
+        width: 80px;
+          height: 30px;
+        border-radius: 10px;}
+#number{display: block;
+        background-color: darkcyan;
+        width: 80px;
+          height: 30px;
+        border-radius: 10px;}
+
+
+/*        помилка*/
+.error{
+    color: red;
+    font-size: 12px;
+  
+    
+}
+.errorSt{
+    color: red;
+    font-size: 12px;
+  
+    
+}
+
+
+#butPass{
+    box-shadow: inset 5px 5px 10px #000000,  inset -5px -5px 10px #d2023d;
+            display: block;
+            background-color: darkturquoise;
+            margin-left: 5px;
+           border-radius: 10px;
+            width: 50px;
+            height: 20px;
+}
+	
+	#window{
+		width: 200px;
+		height: 200px;
+		margin: 50px auto;
+        padding: 50px auto;
+		visibility: hidden;
+        
+		background-color:antiquewhite;
+        border: 3px solid pink;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        
+
+		z-index: 200;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 16px;
+	}
+.window__text{
+  margin-left: 30px;
+  margin-right: 30px;
+    margin-top: 30px;
+}

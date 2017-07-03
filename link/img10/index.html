@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/animate.css">
+</head>
+<body>
+<div id="wrap">
+
+<div class="body">
+
+<div class="main">
+      <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias porro ex animi vero, fuga aliquam, nobis magnam, est soluta, natus quod possimus dolorem velit voluptatibus? Porro soluta officiis repellat, laboriosam exercitationem animi blanditiis pariatur sunt, voluptates architecto provident eligendi iure corporis quos similique commodi placeat unde perferendis eum maxime? Quia ex explicabo ipsam nostrum? Libero minus nisi sunt, adipisci, illo eaque voluptatem doloribus facere ut. Maxime fugiat, saepe vitae, tempore fugit quia atque est mollitia itaque provident esse. Enim optio, laudantium minus, culpa qui, alias ex facilis explicabo incidunt vitae unde facere! Animi sequi soluta omnis iure, voluptatum ea eos.
+       </p>
+
+     
+</div>
+
+<div class="butt">
+       <div class="butt__position">
+              <input type="button" class="edit" value="edit">
+       <input type="button" class="style" value="style">
+       <input type="button" class="block" value="block">
+       </div>
+</div>
+
+<div class="code">
+       <div class="code__display">
+              <p><textarea rows="10" cols="100" name="text" class="userText" value=''><xmp></xmp></textarea></p>
+             <div class="code__butt"> 
+             <input type="button" class='save' value='Save'>     <input type="button" class='add' value='Add'>
+             </div>
+        <div><input type="button" value="Back" class="backCode"></div>
+
+       </div>
+    </div>
+  
+
+    </div>
+    
+
+
+ <div class="create">
+      <div class="create__style">
+       <p class="choose"> Choose what to add:</p>
+      <p class="choose__style"> 
+          <input type="radio" name="rad" class="table" >Table
+          <input type="radio" name="rad" class="list" >List</p>
+       
+       
+    <div class="create__table">
+      <p > Input count of row:<input type="text"  class="addText" id="row"     size="5" > <span class='error'></span>  </p>
+        
+     <p > Input count of colm: <input type="text" class="addText" id="colm"    size="5"> <span class='error'></span>   </p>
+     
+      <p class="styleTable"> Table style:</p>
+      
+     <p  > Input width cell:<input type="text" class="addText"  id="width"   size="5" > <span class="error"></span> </p>
+     
+     <p> Input heidth cell <input type="text"   class="addText" id="height"  size="5"><span class='error'></span>  </p>
+     
+        <p> Border width: <input type="text"  class="addText"  id="widhtBorder"   size="5"> <span class='error'></span> </p> 
+        
+   <label>  Border type: <select  id="type">
+            <option value="dotted">dotted</option>
+            <option value="solid">solid</option>
+            <option value="ridge">ridge</option>
+            <option value="double">double</option>
+     </select> 
+     Border color:  <select  id="color">
+            <option value="black">black</option>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+     </select></label>
+     </div>
+     
+     
+     <div class="create__list">
+        <div class="create__list-style">
+           
+         <p>  <input type="radio" name="rad" class="numbList" >Number
+          <input type="radio" name="rad" class="markList">Mark</p>
+            
+        </div>
+         <div class="text-countList"> Input count of list items: <input type="text" value=" " id="countList" class="addText"  size="5">  <span class='error'></span> </div>
+    <div class="text-mark"> Type of mark:
+     <select  id="mark">
+            <option value="circle">circle</option>
+            <option value="square ">square</option>
+            <option value="disc">disc</option>
+            
+     </select></div> 
+        
+        <div class="text-number"> Type of number:
+     <select  id="number">
+            <option value="I">Римські</option>
+            <option value="A">Букви</option>
+            <option value="1">Цифри</option>
+            
+     </select></div> 
+         
+     </div>
+    <div class="code__butt"> 
+         <input type="button" value="Back" class="backAdd">
+         <input type="button" class='create-butt' value='create'>
+          </div>
+     </div>
+  
+   
+</div>
+
+ <div class="styleBody">
+  
+       <div class="create__style">
+      <div class="styleBody__text">
+              <form action="#">Text size
+              <label><input type="radio" value="12pt" name="n" class="size">12pt</label>
+              <label><input type="radio" value="16pt" name="n" class="size">16pt</label>
+              <label><input type="radio" value="11pt" name="n" class="size">11pt</label>
+              <label><input type="radio" value="19pt" name="n" class="size">19pt</label>
+              <label><input type="radio" value="22pt" name="n" class="size">22pt</label>
+       </form>
+           </div>
+           <p class="styleBody__text">
+         <form action="#">
+             Font Family
+              <select  id="font">
+              <option >Arial</option>
+              <option >Tahoma</option>
+              <option >Veranda</option>
+              <option >Monotype Corsiva</option>
+              <option >Cabrili</option>
+              
+              </select>
+                      
+       </form>
+     </p>
+    <div><input type="button" id="colorbg" value="colorBg">
+        <input type="button" id="colortxt" value="Color"></div>
+       <table class="colorBg">
+             <tr>
+                    <td style="background:brown;"></td>
+                    <td style="background:red;"></td>
+                    <td style="background:pink; " ></td>
+                    
+             </tr> 
+                    <tr>
+                    <td style="background:green;" ></td>
+                    <td style="background:blue; "></td>
+                    <td style="background:black; "></td>
+                    
+             </tr>       
+              
+           
+       </table>
+      
+         
+      <p class="styleBodytext"> 
+     
+    <form action="#">
+              <label><input type="checkbox" value="italic" name="style" class="italic" >Italic text</label>
+              <label><input type="checkbox" value="bold" name="style" class="bold">Bold text</label>
+              
+    </form>
+                 </p>
+
+ <input type="button" value="Back" class="backCreate">
+              
+              
+</div>
+
+<div id="window">
+						
+					<div class="window__text">	
+					<div>Enter password <input type="password" size=10 class="passw"> </div>
+						<div><input type="button" value="Enter" id="butPass"> </div>
+						<div class="errorSt"></div>
+				</div>
+			</div>
+</div>
+<script src="script/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		table{z-index: 3;
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			top: 5%;
+			left: 35%;
+			background: white;
+			border: 3px solid black;
+			
+		}
+		td{z-index: 3;
+			
+			border: 1px solid black;
+		}
+		.im1{
+			position: absolute;
+			left:10px;
+			top:250px;
+			visibility: hidden;
+		}
+		.im2{position: absolute;
+			right: 10px;
+			top: 250px;
+			visibility: hidden;
+			
+		}
+		
+        
+		.winner{
+			
+			position: absolute;
+			z-index: 5;
+			top: 10%;
+			left: 45%;
+			visibility:hidden;
+			border: 4px double  darkslateblue;
+			width: 150px;
+			height: 150px;
+			background-color: darkturquoise;
+			color: red;
+			font-size: 30px;
+			text-align: center;
+		}
+       
+	</style>
+</head>
+<body>
+<div> <img src="im1.png" class="im1"></div>
+	<table id="my">
+		  <tr>
+		<td></td>
+		<td></td> 
+		<td></td> 
+		  </tr>
+		<tr><td></td>
+		<td></td>
+		<td></td>
+		  </tr>
+		<tr><td></td>
+		<td></td>
+		<td></td>
+		  </tr>
+	</table>
+	<div> <img src="im2.png" class="im2"></div>
+	<div class="winner">WINNER Player#1</div>
+
+	<script src="jquery-3.1.1.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

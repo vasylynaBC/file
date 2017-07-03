@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="menu">
+    <div class="menu__one">
+       <div> <input type="button" value='edit' id='edit'></div>
+       <div>  <input type="button" value='bold'  id='bold'></div>
+       <div>  <input type="button" value='italic' id='italic'></div>
+       <div> <input type="button" value='underline' id='Un'></div>
+    <div>  <select  id="size">
+              <option >6pt</option>
+              <option >10pt</option>
+              <option >11pt</option>
+              <option >12pt</option>
+              <option >16pt</option>
+              <option >18pt</option>
+              <option >22pt</option>
+              <option >32pt</option>
+              <option >34pt</option>
+              <option >36pt</option>
+              <option >42pt</option>
+              <option >65pt</option>
+        </select></div>
+    <div> <select  id="font">
+              <option >Arial</option>
+              <option >Tahoma</option>
+              <option >Veranda</option>
+              <option >Monotype Corsiva</option>
+              <option >Cabrili</option>
+              <option >Adobe Fan Heiti Std B</option>
+              <option >Blackoak Std</option>
+              <option >Aharoni</option>
+              <option >Arial Narrow</option>
+              <option >Myriad Pro Light</option>
+        </select></div>
+       <div> <input type="button" value='Color' id='color'>
+         <table id="colorTb">
+             <tr>
+                    <td style="background:brown;"></td>
+                    <td style="background:red;"></td>
+                    <td style="background:pink; " ></td>
+                    
+             </tr> 
+                    <tr>
+                    <td style="background:green;" ></td>
+                    <td style="background:blue; "></td>
+                    <td style="background:black; "></td>
+                    
+             </tr>    
+                    <tr>
+                    <td style="background:cyan;" ></td>
+                    <td style="background:white; "></td>
+                    <td style="background:magenta; "></td>
+                    
+             </tr>       
+                         
+       </table></div>
+       <div> <input type="button" value='Background' id='bGroun'>
+           <div id="tableBox"> 
+           <input type="button" value="BackgIm" id="bg">
+           <table class="colorBg">
+                      
+             <tr>
+                    <td style="background:brown;"></td>
+                    <td style="background:red;"></td>
+                    <td style="background:pink; " ></td>
+                    
+             </tr> 
+                    <tr>
+                    <td style="background:green;" ></td>
+                    <td style="background:blue; "></td>
+                    <td style="background:black; "></td>
+                    
+             </tr>    
+                    <tr>
+                    <td style="background:cyan;" ></td>
+                    <td style="background:white; "></td>
+                    <td style="background:magenta; "></td>
+                    
+             </tr>       
+                         
+       </table></div>
+              
+              <div id="tableBox2"> 
+      <input type="button" value="BackgCol" id="bg2">
+      <table class="colorBg2">
+            
+            
+             <tr>
+                    <td style="background-image:url(img/1.jpg);"></td>
+                    <td style="background-image:url(img/2.jpg);"></td>
+                    <td style="background-image:url(img/3.jpg); " ></td>
+                    
+             </tr> 
+                    <tr>
+                    <td style="background-image:url(img/4.jpg);" ></td>
+                    <td style="background-image:url(img/5.jpg);"></td>
+                    <td style="background-image:url(img/6.jpg);"></td>
+                    
+             </tr>    
+                    <tr>
+                    <td style="background-image:url(img/7.jpg);" ></td>
+                    <td style="background-image:url(img/8.jpg); "></td>
+                    <td style="background-image:url(img/9.jpg); "></td>
+                    
+             </tr>       
+                         
+       </table>
+            <form id="upload">
+  <input type="file" id="myfile" onchange="FileLoad(event)"  >
+
+ 
+</form>
+              </div>
+              
+       </div>
+                
+         <div> <label><input type="radio" value="left" name="n" class="al">left</label>
+         <label><input type="radio" value="center" name="n" class="al">center</label>
+         <label><input type="radio" value="right" name="n" class="al">right</label>
+         </div>
+       
+       </div>
+       <div class="menu__two">
+   <div> <input type="button" value="Save" id="save"></div>
+   <div> <input type="button" value="Creattab" id="tab"></div>
+   <div> <input type="button" value="creatList" id="list"></div>
+       </div>
+        <div class="tableCr">
+           <form id="myForm">
+           
+         <p> К-сть рядків:<input type="text"  id="row"  value=''   size="5" > 
+         <span>  К-сть стовпців: <input type="text" id="colm"    size="5">   </span> </p>
+           
+         <p> Ширина:<input type="text"  id="width"   size="5" >
+         <span>   Висота: <input type="text"   id="height"  size="5"></span> </p>
+     
+         <p> cellspacing: <input type="text"   id="widhtBorder"   size="5">
+         <span>   Тип рамки: <input type="text"  class="typeB" value=''  size="5"> </span> </p> 
+         
+         <p> Товщина рамки: <input type="text"  class="addWid"  id="border"   size="5"> 
+         <span>   Колір рамки: <input type="text"  class="colorT" value=''  size="5"> </span></p> 
+             
+            </form>
+            
+         <div class="butt">
+         <input type="button" value="скинути" onclick="ResetFun()" id="skDate">     
+         <input type="button" value="створити" id="creattab">
+         </div>
+       </div>
+        
+        
+        <div class="listCr">
+            <form id="myForm">
+                <p >Тип списку:<label><input type="radio"  id="typ"   value="ol" > ol</label></p>
+                 
+                <p> Тип маркера:  <select  id="number">
+                  <option value="I">Римські</option>
+                  <option value="A">Букви</option>
+                  <option value="1">Цифри</option>
+                  </select></p>
+     
+               <p> Кількість: <input type="text"   id="kilkist"   size="5"> </p> 
+           </form>
+       
+       
+        <div class="butt">
+         <input type="button" value="скинути" onclick="ResetFun()" id="skDate">    
+         <input type="button" value="створити"  id="creatlist">
+        </div>
+            
+        </div>
+    </div>
+    
+    <div class="main" >
+        <div class="main__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum vero doloremque iste quod eius vel officia adipisci placeat reiciendis quasi aspernatur quaerat alias, accusantium quos sint expedita, autem. Nihil dolore architecto quasi asperiores, assumenda velit animi, nisi voluptatibus id, laboriosam, aliquid sapiente ullam deserunt impedit. Aspernatur illo vero, mollitia iusto impedit, saepe quia, quasi harum labore dignissimos fugit. Nemo soluta similique sunt quo, doloremque sequi aliquid magnam, assumenda exercitationem nisi harum dolorem esse natus officiis dolorum nulla impedit ex, deserunt et dignissimos explicabo cum cupiditate labore hic excepturi. Reiciendis, molestiae, at. Pariatur rem, laborum laudantium obcaecati incidunt totam, sit animi!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores amet sapiente sed ipsa nobis, at ipsum sint, sit ratione accusantium unde accusamus molestias! Laudantium nobis qui accusantium natus, quam id dolorem quasi recusandae optio dolor deleniti harum eius, provident est voluptates tenetur? Delectus, libero labore similique vitae blanditiis voluptates ullam repellendus dolore architecto, obcaecati maiores explicabo id tempora, ex ipsam facilis incidunt at! 
+        </div>
+    </div>
+    <div class="main__edit">
+              <textarea  name="text" class="userText" value=''><xmp></xmp></textarea>
+    </div>
+    </div>
+    
+    
+<script src="js/main.js"></script>
+</body>
+</html>

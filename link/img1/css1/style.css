@@ -1,0 +1,123 @@
+body{background:url(../im/fon.png)  ;
+    
+     
+     background-position: center top;
+    width: auto;
+
+    overflow: auto;
+    
+}
+
+ 
+header{ display: flex;
+    justify-content:flex-start;
+    top: 0;
+        width:50%;
+    margin: 0;
+    left: 2%;
+   
+}
+ 
+.bx1 {display: inline-block;
+    position: absolute;
+float: left;
+clear: both;
+    width: 15%;
+    margin: 0;
+       left: 360px;
+    top: 1px;   
+    
+}
+ .logo{display: flex;
+     flex-direction: column;
+     
+    position:relative;
+float: left;
+clear: both;
+    width: 40%;
+     
+    left: 250px;
+    top: 180px;
+}
+.box img{width: 100%;
+height: 80%;}
+ .bx1 img{width: 100%;
+     height: 70%;
+}
+
+
+.on{z-index: 2;}
+.vt{z-index: 1;}
+
+
+            .conteiner::after, .conteiner::before{content: "";
+display: block;
+clear: both;}
+            .container, figure{ display: inline-block; }
+
+.container { position: absolute;
+    float: left;
+    width: 100%;
+top: 270px;
+margin: 0;
+left: 5%;
+right: 5%;}
+.contact{position: absolute;
+    margin: 0;
+    display: flex;
+flex-direction: column;
+    justify-content: flex-end;
+    right: 1%;
+    top: 8%;
+    width: 15%;
+}
+.box{display: flex;
+    flex-direction: row;
+    
+    color: aliceblue;
+font-size: 100%;}
+figure{
+            top: 220px;
+            width: 25%;
+           right: 10%;
+    left: 10%;
+    margin: 3%;
+    
+         
+           
+             
+        }
+
+figure img { float: left;
+    clear: both;
+    border: 10px solid;
+    border-color:gray;
+   box-sizing: border-box;
+   
+    width: 100%; }
+figcaption{color: aliceblue;
+text-align: center;}
+@media screen and (max-width:1000px){
+       figure{width: 40%;}
+    .header{width: 20%; }
+}
+@media screen and (max-width:700px){
+       figure{float: right;}
+    .box{flex-direction: column-reverse;}
+       
+}
+
+
+footer{margin: 0;
+    display: inline-flex;
+    position: absolute;
+    
+    
+    left: 40%;
+right: 30%;
+       top:150%;
+    width: 40%;
+    color: aliceblue;
+    
+}
+

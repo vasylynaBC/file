@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+      
+      <style>
+
+          table{
+           
+             border: 3px solid green;
+              background-color: darkseagreen;
+              
+          }
+          td{
+              border: 2px solid gray;
+              
+          }
+          h2{margin-left: 40%;
+              font-weight: 600;
+          }
+
+         .text {
+      border: none;
+             outline: none;
+              background-color:transparent;
+          }
+    </style>
+</head>
+<body ng-app="myApp" >
+   
+   <div ng-controller="myCtrl">
+       
+      
+      <div class="container">
+
+     <h2 ng-click="hideBox()">NOTEBOOK</h2>
+         <div class="table-responsive">     
+        <table class="table" ng-if="checker">
+            <tr>
+                <th>Name</th>
+                <th >Surname</th>
+                <th>Phone</th>
+                <th >Age</th>
+                <th >Remove</th>
+            </tr>
+            
+        <tr ng-repeat="user in users | orderBy: 'name' ">
+
+                <td> <input class="text" type="text" ng-model="user.name"> </td>
+                <td> <input class="text" type="text" ng-model="user.surname"> </td>
+                <td> <input class="text" type="text" ng-model="user.phone"> </td>
+                <td> <input class="text" type="text" ng-model="user.age"> </td>
+               
+                <td>  <input type="button"  value="Remove" ng-click="removeItem($index)"></td>
+                
+                
+                
+            </tr>
+        </table> 
+
+          </div>
+           <table class="table" ng-show="checker">
+            <tr>
+            <td>
+            <input type="text" ng-model="name"></td>
+            <td>
+      <input type="text" ng-model="surname"></td>
+            <td>
+      <input type="text" ng-model="phone"></td>
+            <td>
+      <input type="text" ng-model="age"></td>
+            <td>
+            <input type="button"  value="Adduser" ng-click="addUser()">
+             </td>
+               </tr>
+          </table>
+         
+         
+        </div>
+         
+         
+</div>
+          
+
+    
+    
+    
+    
+    
+
+   
+    <script src="js/app.js"></script>
+    <script src="js/controller/myCtrl.js"></script>
+    
+</body>
+</html>

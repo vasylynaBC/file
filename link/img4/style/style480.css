@@ -1,0 +1,199 @@
+window{
+    width: 100px;
+overflow-y: auto;
+}
+body{
+    background: linear-gradient(to right, rgba(166,10,85,0.43) 0%, rgba(250,238,208,0.43) 34%, rgba(166,10,85,0.43) 100%);
+    
+}
+.main{
+   background-image: url(../img/back2.jpg);
+     background-repeat: no-repeat;
+      background-position: center;
+    
+    background-size:contain;
+       
+     
+
+}
+
+.back{
+   background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+   background-attachment:fixed;
+  margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 400px;
+    }
+
+.main__head{position: absolute;
+    z-index: 4;
+    
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10%;
+    display: flex;
+    background: linear-gradient(to right, rgba(166,10,85,0.43) 0%, rgba(250,238,208,0.43) 54%, rgba(166,10,85,0.43) 100%);
+    border-radius: 20px;
+    flex-wrap: nowrap;
+    width: 100%;
+    height:150px;
+    
+}
+.head{
+
+   margin-left:  33%;
+   
+}
+h1{
+    font-size: 35px;
+    text-shadow: 4px 4px 2px #ab80f9;
+ color: #3e0a9e;  
+    font-family: Monotype Corsiva;
+}
+h3{top:  30%;
+    left: 45%;
+     color: #3e0a9e;  
+    font-size: 20px;
+    position: absolute;
+    
+}
+
+.main__poslygu{
+    display: flex;
+    flex-direction: row;
+    margin-top:  0;
+    width: 100%;
+    height: 200px;;
+   margin-left: 0%;
+    
+    border-radius: 20px;
+    
+}
+
+.main__slide{
+    position: relative;
+  background-repeat: no-repeat;
+  background-size: contain; 
+box-shadow:    inset 0px -1px 30px 9px #7e0544 ;
+    margin-top: 10%;
+    margin-left: 8%;
+    width:40%;
+    height:40%;
+  
+}
+
+.main__left{
+    margin-left: 8%;
+}
+.main__right{
+   
+    margin-left: 8%;
+}
+#sl1{
+    position: absolute;
+    bottom: 10px;
+    left: 25%;
+    
+}#sl2{
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+}#sl3{
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+}#sl4{
+    position: absolute;
+    bottom: 10px;
+    left: 55%;
+}
+
+.poslygu-manikyr{
+   margin-left: 13%;
+    margin-top: 5%;
+         z-index: 0;
+}.poslygu-vizag{
+    margin-left: 10%;
+     margin-top: 5%;
+     z-index: 0;
+
+}.poslygu-keratin{
+    margin-left: 13%;
+    margin-top:  5%;
+     z-index: 0;
+}.poslygu-masaz{
+    margin-left: 10%;
+    margin-top:  6%;
+     z-index: 0;
+}
+
+.manikyr, .vizag, .keratin, .masaz{
+width: 60px; 
+    margin-top: 25%;
+    margin-bottom: 65%;
+height: 60px;
+}
+.manikyr-text, .vizag-text, .keratin-text, .masaz-text{
+display: none;
+}
+
+.main__form{width: 100%;
+    height: 250px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background: linear-gradient(to right, rgba(166,10,85,0.84) 0%, rgba(250,238,208,0.88) 55%, rgba(166,10,85,0.92) 100%);
+   margin-top:60%;}
+
+#formdata{
+    margin-left:  3%;
+    margin-bottom:  0%;
+    width: 60%;
+}
+span{
+    font-size: 8px;
+}
+.fr1, .fr2, .fr3, .fr4, .fr5{
+    margin-bottom: 1%;
+}
+h4{   color: #3e0a9e;
+      font-size: 20px;
+    margin-left: 5%;
+    margin-top: 1%;
+    
+}
+.formBut{
+    margin-top:-55%;
+    margin-left:55%;
+    width:30%;
+    
+}
+.textarea{
+    margin-right: 10%;
+    margin-top: 1%;
+}
+.coments{
+    width: 130px;
+    margin-left: 10%;
+    margin-top: 5%; 
+     color:#14045b;
+    font-size: 15px;
+}
+#click{
+   margin-right: 10%;
+    margin-top: 1%;
+}
+.Address{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:30px;;
+    margin-left:800px;
+    width: 400px;
+}
+p, .p{
+    color:#14045b;
+    font-size: 15px;
+}

@@ -1,0 +1,131 @@
+ .main{
+            position: relative;
+     width: 100%;
+     height: 700px;
+     background-repeat: no-repeat;
+     background-size: 100%;
+     background-image: url(img/bac.jpg);
+            width: auto;
+        }
+.tribune{position: absolute;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    background-image: url(img/tribune.png);
+    background-repeat: repeat-x;
+    
+}
+
+.score{position: absolute;
+    z-index: 4;
+    align-self: center;
+    width: 60px;
+    height: 50px;
+    top: 100px;
+    align-content: center;
+    left: 43%;
+    font-size: 40px;
+    background: white;
+    border: 2px double black;
+}
+span{font-size: 40px;
+    color:red;
+    
+}
+.gol{visibility: hidden;
+    position: absolute;
+    top: 15px;
+    left: 150px;
+    width: 180px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+        height: 50px;
+    color: firebrick;
+    background: gray;
+    border: 2px solid firebrick;
+    
+}
+.gol2{
+    position: absolute;
+    visibility: hidden;
+    top: 15px;
+    left: 500px;
+    width: 180px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+        height: 50px;
+    color:white ;
+    background-color: darkred;
+    border: 2px solid black;
+    
+    
+}.gol3{visibility: hidden;
+    position: absolute;
+    top: 15px;
+    right: 200px;
+    width: 180px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+        height: 50px;
+    color:gray ;
+    background: firebrick;
+    border: 2px solid gray;
+    
+}
+        .main__vor{
+            position: absolute;
+            width: 400px;
+            height:400px;
+            background-image: url(img/vor2.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            top: 150px;
+            left: 30%;
+            right: 200px;
+           
+        }
+        .bl1{position: absolute;
+            top:10px;
+            left: 10px;
+            }
+        .bl2{position: absolute;
+            top: 250px;
+            left: 10px;
+           }
+        .bl3{position: absolute;
+            
+            top: 10px;
+            left: 350px;
+ }
+        .bl4{position: absolute;
+            top: 250px;
+            left: 350px;
+                        }
+        
+        .man{position: absolute;
+           top: 180px;
+            left: 40%;
+          
+            
+        }
+.foot{position: absolute;
+  left: 33%;
+    top: 450px;
+}
+.gp1{position: absolute;
+    visibility: hidden;
+  top: 170px;
+  left: 40%;
+    width: 100px;
+    height: 100px;
+}
+
+     .ball{position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 550px;
+            left: 40%;
+                        }
